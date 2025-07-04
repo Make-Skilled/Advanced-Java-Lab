@@ -15,7 +15,7 @@
     }
 
     // 2. HttpSession
-    HttpSession session = request.getSession(false);
+    session = request.getSession(false);
     String userFromSession = (session != null) ? (String) session.getAttribute("username") : null;
 
     // 3. URL Rewriting
