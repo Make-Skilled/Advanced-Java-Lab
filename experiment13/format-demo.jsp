@@ -21,8 +21,5 @@
 <!-- Format Date and Time -->
 <p>Current time: <fmt:formatDate value="${today}" type="both" /></p>
 
-<!-- Custom Message (Optional if resource bundle is used) -->
-<fmt:message key="welcome.message" bundle="${bundle}" />
-
 </body>
 </html>
