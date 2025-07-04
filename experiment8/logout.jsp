@@ -1,6 +1,6 @@
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <%
-    HttpSession session = request.getSession(false);
+    session = request.getSession(false);
     if (session != null) {
         session.invalidate();
     }
