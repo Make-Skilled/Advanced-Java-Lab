@@ -1,10 +1,10 @@
 import java.sql.*;
 
-public class ScrollableResultSetDemo {
+public class Main {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/college";
         String username = "root";
-        String password = "your_password";
+        String password = "M@keskilled0";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -39,8 +39,8 @@ public class ScrollableResultSetDemo {
             rs.last();
             System.out.println(rs.getInt("EmpID") + ", " + rs.getString("Name"));
 
-            System.out.println("--- 2nd Record using absolute ---");
-            rs.absolute(2);
+            System.out.println("--- 1st Record using absolute ---");
+            rs.absolute(1);
             System.out.println(rs.getInt("EmpID") + ", " + rs.getString("Name"));
 
             con.close();
